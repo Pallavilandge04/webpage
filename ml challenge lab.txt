@@ -7,3 +7,13 @@ for task 2
 curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/refs/heads/master/Prepare%20Data%20for%20ML%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/quicklabtask2.sh
 sudo chmod +x quicklabtask2.sh
 ./quicklabtask2.sh
+
+create virtual machine commands
+ngix server
+sudo apt-get update
+sudo apt-get install -y nginx
+ps auwx | grep nginx
+ 
+
+create new instance with gcloud
+gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
